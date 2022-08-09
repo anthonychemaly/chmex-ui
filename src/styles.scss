@@ -1,0 +1,30 @@
+@font-face {
+  font-family: IBM Plex Sans;
+  src: url(./assets/fonts/IBMPlexSans.otf);
+}
+@font-face {
+  font-family: Greycliff Bold;
+  src: url(./assets/fonts/GreycliffCF-Bold.ttf);
+}
+@font-face {
+  font-family: Greycliff Regular;
+  src: url(./assets/fonts/GreycliffCF-Regular.ttf);
+}
+@font-face {
+  font-family: Agrandir Bold;
+  src: url(./assets/fonts/Agrandir-TextBold.otf);
+}
+
+$cx-white: #ffffff;
+$cx-primary: #ffffff;
+$cx-black: #000000;
+$cx-grey: #adaab2;
+
+.no-select {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}

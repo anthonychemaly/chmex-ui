@@ -1,10 +1,23 @@
 import React from 'react'
 
-import { ExampleComponent } from 'chmex-ui'
+import { GradientButton, Button, Typography } from 'chmex-ui'
 import 'chmex-ui/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return (
+    <div
+      style={{
+        backgroundColor: 'black',
+        height: '50vh',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center'
+      }}
+    >
+      <Button text='Create React Library Example 😄' kind='white-outline' />
+      <GradientButton text='yala' />
+      <Typography kind='h5' text='hello' />
+    </div>
+  )
 }
-
 export default App

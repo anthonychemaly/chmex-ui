@@ -1,6 +1,7 @@
-import React from 'react'
-import styles from './styles.module.css'
+import './styles.scss'
 
-export const ExampleComponent = ({ text }) => {
-  return <div className={styles.test}>Example Component: {text}</div>
-}
+import Button from './components/Button'
+import GradientButton from './components/GradientButton'
+import Typography from './components/Typography'
+
+export { Button, GradientButton, Typography }
