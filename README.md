@@ -15,12 +15,12 @@ npm install --save chmex-ui
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'chmex-ui'
+import { Button } from 'chmex-ui'
 import 'chmex-ui/dist/index.css'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return <Button text="My Button" kind="white-outline" />
   }
 }
 ```
