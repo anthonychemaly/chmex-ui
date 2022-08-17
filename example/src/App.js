@@ -8,15 +8,27 @@ const App = () => {
     <div
       style={{
         backgroundColor: 'black',
-        height: '50vh',
+        height: '100vh',
         display: 'flex',
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'space-between',
+        flexDirection: 'column',
+        padding: 64
       }}
     >
-      <Button text='Create React Library Example 😄' kind='white-outline' />
-      <GradientButton text='yala' />
-      <Typography kind='h5' text='hello' />
+      <Button text='Create React Library Example' kind='white-outline' />
+      <Button text='Create React Library Example' kind='white' />
+      <Button text='Create React Library Example' kind='primary' />
+      <Button text='Create React Library Example' kind='primary-outline' />
+      <Button text='Create React Library Example' kind='secondary' />
+      <Button text='Create React Library Example' kind='secondary-outline' />
+      <GradientButton
+        text='yala'
+        onClick={() => {
+          alert('hi')
+        }}
+      />
+      <Typography kind='h2'>Hello</Typography>
     </div>
   )
 }
