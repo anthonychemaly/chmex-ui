@@ -51,6 +51,7 @@
     "dist"
   ],
   "dependencies": {
+    "react-connect-context-map": "^1.1.1",
     "sass": "^1.54.3"
   }
 }

@@ -5,66 +5,9 @@
   font-family: IBM Plex Sans;
   -webkit-transition: background 0.5s;
   transition: background 0.5s;
-  color: $cx-white;
   padding: 8px 16px;
 }
 
-.white-outline {
-  border: 2px solid $cx-white;
-  background: transparent;
-  &:hover {
-    background: $cx-white;
-    color: $cx-black;
-  }
-}
-
-.white {
-  border: 2px solid $cx-white;
-  background: $cx-white;
-  color: $cx-black;
-  &:hover {
-    background: transparent;
-    color: $cx-white;
-  }
-}
-
-.primary {
-  border: 2px solid $cx-primary;
-  background: $cx-primary;
-  color: $cx-white;
-
-  &:hover {
-    background: transparent;
-  }
-}
-
-.primary-outline {
-  border: 2px solid $cx-primary;
-  background: transparent;
-  color: $cx-white;
-
-  &:hover {
-    background: $cx-primary;
-  }
-}
-.secondary {
-  border: 2px solid $cx-secondary;
-  background: $cx-secondary;
-  color: $cx-black;
-
-  &:hover {
-    background: transparent;
-    color: $cx-white;
-  }
-}
-
-.secondary-outline {
-  border: 2px solid $cx-secondary;
-  background: transparent;
-  color: $cx-white;
-
-  &:hover {
-    color: $cx-black;
-    background: $cx-secondary;
-  }
+.rounded {
+  border-radius: 8px;
 }
