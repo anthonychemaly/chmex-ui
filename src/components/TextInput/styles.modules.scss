@@ -1,0 +1,26 @@
+@import '../../styles.scss';
+
+.nt-input {
+  font-family: IBM Plex Sans;
+  padding: 12px 10px;
+  border: 0px;
+  outline: none;
+  box-shadow: none;
+  font-size: 15px;
+}
+
+.standard {
+  border-bottom-width: 2px !important;
+  border-bottom-style: solid;
+}
+
+.outlined-rounded {
+  border-width: 2px !important;
+  border-style: solid;
+  border-radius: 8px;
+}
+
+.outlined {
+  border-width: 2px !important;
+  border-style: solid;
+}

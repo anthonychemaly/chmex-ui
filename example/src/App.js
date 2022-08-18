@@ -1,6 +1,12 @@
 import React from 'react'
 
-import { GradientButton, Button, Typography, ChmexUIContext } from 'chmex-ui'
+import {
+  GradientButton,
+  Button,
+  Typography,
+  ChmexUIContext,
+  TextInput
+} from 'chmex-ui'
 import 'chmex-ui/dist/index.css'
 
 const App = () => {
@@ -22,6 +28,12 @@ const App = () => {
           kind='basic-outline'
           borderVariant='rounded'
           transition={false}
+        />
+        <TextInput placeholder='Create React Library Example' kind='standard' />
+        <TextInput placeholder='Create React Library Example' kind='outlined' />
+        <TextInput
+          placeholder='Create React Library Example'
+          kind='outlined-rounded'
         />
         <Button text='Create React Library Example' kind='basic' />
         <Button text='Create React Library Example' kind='primary' />
