@@ -16,7 +16,8 @@ const Button = ({
   text,
   style,
   transition = true,
-  onClick
+  onClick,
+  borderColor
 }) => {
   const { colors, dark } = useChmexTheme()
   const [hovered, setHovered] = useState(false)
@@ -29,7 +30,9 @@ const Button = ({
         background: !hovered
           ? getBgColor(colors, kind, dark)
           : getHoveredBgColor(colors, kind, dark),
-        border: `2px solid ${getBorderColor(colors, kind, dark)}`,
+        border: `2px solid ${
+          borderColor ? borderColor : getBorderColor(colors, kind, dark)
+        }`,
         color: !hovered
           ? getColor(colors, kind, dark)
           : getHoveredColor(colors, kind, dark)
