@@ -1,5 +1,23 @@
 @import '../../styles.scss';
 
+.nt-input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.nt-input-label {
+  font-family: IBM Plex Sans;
+  padding: 8px 4px;
+  font-size: 14px;
+}
+
+.nt-input-error {
+  font-family: IBM Plex Sans;
+  padding: 6px 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
 .nt-input {
   font-family: IBM Plex Sans;
   padding: 12px 10px;

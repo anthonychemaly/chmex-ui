@@ -5,5 +5,7 @@ export default {
   primary: '#19646a',
   secondary: '#00df96',
   tertiary: '#032e3e',
-  transparent: 'transparent'
+  transparent: 'transparent',
+  disabledBg: '#d7d7d7',
+  warning: '#e60000'
 }

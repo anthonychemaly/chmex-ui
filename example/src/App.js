@@ -11,10 +11,14 @@ import 'chmex-ui/dist/index.css'
 
 const App = () => {
   return (
-    <ChmexUIContext.Provider value={{ dark: true }}>
+    <ChmexUIContext.Provider
+      value={{
+        dark: false
+      }}
+    >
       <div
         style={{
-          backgroundColor: 'black',
+          backgroundColor: 'white',
           height: '100vh',
           display: 'flex',
           alignItems: 'center',
@@ -31,10 +35,15 @@ const App = () => {
         />
         <TextInput placeholder='Create React Library Example' kind='standard' />
         <TextInput placeholder='Create React Library Example' kind='outlined' />
+
         <TextInput
           placeholder='Create React Library Example'
           kind='outlined-rounded'
+          label='Create React Library Example'
+          fullWidth
+          error='Check your balance'
         />
+
         <Button text='Create React Library Example' kind='basic' />
         <Button text='Create React Library Example' kind='primary' />
         <Button text='Create React Library Example' kind='primary-outline' />
