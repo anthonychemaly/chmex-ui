@@ -4,6 +4,7 @@ import Button from './components/Button'
 import GradientButton from './components/GradientButton'
 import Typography from './components/Typography'
 import TextInput from './components/TextInput'
+import TextArea from './components/TextArea'
 
 import ChmexUIColors from './constants/colors'
 
@@ -15,6 +16,7 @@ export {
   GradientButton,
   Typography,
   TextInput,
+  TextArea,
   ChmexUIContext,
   ChmexUIColors,
   useChmexTheme

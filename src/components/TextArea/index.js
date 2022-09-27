@@ -3,14 +3,14 @@ import { useChmexTheme } from '../../hooks'
 import styles from './styles.modules.scss'
 import { getBgColor, getBorderColor, getColor, getLabelColor } from './utils'
 
-const TextInput = ({
+const TextArea = ({
   kind,
   borderVariant = 'outlined',
   borderColor,
   color,
   errorColor,
   labelColor,
-  inputStyle,
+  textAreaStyle,
   labelStyle,
   errorStyle,
   containerStyle,
@@ -25,22 +25,22 @@ const TextInput = ({
   return (
     <div
       style={{ width: fullWidth && '100%', ...containerStyle }}
-      className={styles['nt-input-container']}
+      className={styles['nt-text-area-container']}
     >
       {label && (
         <span
-          className={styles['nt-input-label']}
+          className={styles['nt-text-area-label']}
           style={{
-            color: labelColor || getLabelColor(colors, dark),
+            color: labelColor || getLabelColor(colors, kind, dark),
             ...labelStyle
           }}
         >
           {label}
         </span>
       )}
-      <input
+      <textarea
         disabled={disabled}
-        className={`${styles['nt-input']} ${styles[borderVariant]}`}
+        className={`${styles['nt-text-area']} ${styles[borderVariant]}`}
         {...others}
         style={{
           backgroundColor: getBgColor(colors, disabled),
@@ -50,12 +50,12 @@ const TextInput = ({
           width: fullWidth && '100%',
           borderStyle: disabled ? 'dotted' : 'solid',
           cursor: disabled ? 'not-allowed' : 'inherit',
-          ...inputStyle
+          ...textAreaStyle
         }}
       />
       {error && (
         <span
-          className={styles['nt-input-error']}
+          className={styles['nt-text-area-error']}
           style={{
             color: errorColor || colors.warning,
             ...errorStyle
@@ -68,4 +68,4 @@ const TextInput = ({
   )
 }
 
-export default TextInput
+export default TextArea

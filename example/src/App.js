@@ -5,7 +5,8 @@ import {
   Button,
   Typography,
   ChmexUIContext,
-  TextInput
+  TextInput,
+  TextArea
 } from 'chmex-ui'
 import 'chmex-ui/dist/index.css'
 
@@ -13,12 +14,12 @@ const App = () => {
   return (
     <ChmexUIContext.Provider
       value={{
-        dark: false
+        dark: true
       }}
     >
       <div
         style={{
-          backgroundColor: 'white',
+          backgroundColor: 'black',
           height: '100vh',
           display: 'flex',
           alignItems: 'center',
@@ -33,12 +34,20 @@ const App = () => {
           borderVariant='rounded'
           transition={false}
         />
-        <TextInput placeholder='Create React Library Example' kind='standard' />
-        <TextInput placeholder='Create React Library Example' kind='outlined' />
+        <TextInput
+          placeholder='Create React Library Example'
+          borderVariant='standard'
+        />
+        <TextInput
+          placeholder='Create React Library Example'
+          borderVariant='outlined'
+          label="hey"
+        />
 
         <TextInput
           placeholder='Create React Library Example'
-          kind='outlined-rounded'
+          borderVariant='outlined-rounded'
+          kind="primary-outline"
           label='Create React Library Example'
           fullWidth
           error='Check your balance'
@@ -52,6 +61,12 @@ const App = () => {
         <Button text='Create React Library Example' kind='tertiary' />
         <Button text='Create React Library Example' kind='tertiary-outline' />
         <Button text='Create React Library Example' kind='transparent' />
+        <TextArea
+          text='Create React Library Example'
+          kind='secondary-outline'
+          borderVariant='standard'
+          label="hey"
+        />
         <GradientButton
           text='yala'
           onClick={() => {

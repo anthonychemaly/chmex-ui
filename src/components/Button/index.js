@@ -8,7 +8,7 @@ import {
   getColor,
   getHoveredBgColor,
   getHoveredColor
-} from './utils'
+} from '../utils'
 
 const Button = ({
   kind,
@@ -31,7 +31,7 @@ const Button = ({
           ? getBgColor(colors, kind, dark)
           : getHoveredBgColor(colors, kind, dark),
         border: `2px solid ${
-          borderColor ? borderColor : getBorderColor(colors, kind, dark)
+          borderColor || getBorderColor(colors, kind, dark)
         }`,
         color: !hovered
           ? getColor(colors, kind, dark)

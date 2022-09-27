@@ -113,10 +113,15 @@ function getHoveredColor(colors, kind, dark) {
   }
 }
 
+function getLabelColor(colors, dark) {
+  return dark ? colors.white : colors.black
+}
+
 export {
   getBgColor,
   getBorderColor,
   getColor,
   getHoveredBgColor,
-  getHoveredColor
+  getHoveredColor,
+  getLabelColor
 }
