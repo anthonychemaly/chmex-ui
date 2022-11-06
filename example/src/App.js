@@ -6,7 +6,8 @@ import {
   Typography,
   ChmexUIContext,
   TextInput,
-  TextArea
+  TextArea,
+  Select
 } from 'chmex-ui'
 import 'chmex-ui/dist/index.css'
 
@@ -41,13 +42,13 @@ const App = () => {
         <TextInput
           placeholder='Create React Library Example'
           borderVariant='outlined'
-          label="hey"
+          label='hey'
         />
 
         <TextInput
           placeholder='Create React Library Example'
           borderVariant='outlined-rounded'
-          kind="primary-outline"
+          kind='primary-outline'
           label='Create React Library Example'
           fullWidth
           error='Check your balance'
@@ -65,13 +66,19 @@ const App = () => {
           text='Create React Library Example'
           kind='secondary-outline'
           borderVariant='standard'
-          label="hey"
+          label='hey'
         />
         <GradientButton
           text='yala'
           onClick={() => {
             alert('hi')
           }}
+        />
+        <Select
+          options={[
+            { label: 'katkout', value: 'katkout' },
+            { label: 'chmex', value: 'chmexito' }
+          ]}
         />
         <Typography kind='h2'>Hello</Typography>
       </div>
