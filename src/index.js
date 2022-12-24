@@ -6,6 +6,8 @@ import Typography from './components/Typography'
 import TextInput from './components/TextInput'
 import TextArea from './components/TextArea'
 import Select from './components/Select'
+import NavBar from './components/NavBar'
+import Code from './components/Code'
 
 import ChmexUIColors from './constants/colors'
 
@@ -19,6 +21,8 @@ export {
   TextInput,
   TextArea,
   Select,
+  NavBar,
+  Code,
   ChmexUIContext,
   ChmexUIColors,
   useChmexTheme

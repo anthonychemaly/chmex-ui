@@ -1,15 +1,9 @@
 import React from 'react'
 
-import {
-  GradientButton,
-  Button,
-  Typography,
-  ChmexUIContext,
-  TextInput,
-  TextArea,
-  Select
-} from 'chmex-ui'
+import { Typography, ChmexUIContext, NavBar } from 'chmex-ui'
 import 'chmex-ui/dist/index.css'
+import Overview from './sections/Overview'
+import Installation from './sections/Installation'
 
 const App = () => {
   return (
@@ -18,69 +12,34 @@ const App = () => {
         dark: true
       }}
     >
-      <div
-        style={{
-          backgroundColor: 'black',
-          height: '100vh',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-          flexDirection: 'column',
-          padding: 64
-        }}
-      >
-        <Button
-          text='Create React Library Example'
-          kind='basic-outline'
-          borderVariant='rounded'
-          transition={false}
-        />
-        <TextInput
-          placeholder='Create React Library Example'
-          borderVariant='standard'
-        />
-        <TextInput
-          placeholder='Create React Library Example'
-          borderVariant='outlined'
-          label='hey'
-        />
+      <div className='page-container'>
+        <div className='sidebar'></div>
+        <div className='documentation-wrapper'>
+          <NavBar
+            style={{ paddingInline: 64 }}
+            leftChild={
+              <div>
+                <h1 style={{ color: 'white' }}>hi</h1>
+              </div>
+            }
+            rightChild={
+              <div>
+                <h1 style={{ color: 'yellow' }}>Light</h1>
+              </div>
+            }
+          />
+          <div className='documentation'>
+            <Typography kind='h1'>
+              Hey! Welcome to Chmex UI Documentation
+            </Typography>
+            <Typography kind='h4'>
+              This is your all-need guide to use Chmex UI in your app.
+            </Typography>
 
-        <TextInput
-          placeholder='Create React Library Example'
-          borderVariant='outlined-rounded'
-          kind='primary-outline'
-          label='Create React Library Example'
-          fullWidth
-          error='Check your balance'
-        />
-
-        <Button text='Create React Library Example' kind='basic' />
-        <Button text='Create React Library Example' kind='primary' />
-        <Button text='Create React Library Example' kind='primary-outline' />
-        <Button text='Create React Library Example' kind='secondary' />
-        <Button text='Create React Library Example' kind='secondary-outline' />
-        <Button text='Create React Library Example' kind='tertiary' />
-        <Button text='Create React Library Example' kind='tertiary-outline' />
-        <Button text='Create React Library Example' kind='transparent' />
-        <TextArea
-          text='Create React Library Example'
-          kind='secondary-outline'
-          borderVariant='standard'
-          label='hey'
-        />
-        <GradientButton
-          text='yala'
-          onClick={() => {
-            alert('hi')
-          }}
-        />
-        <Select
-          options={[
-            { label: 'katkout', value: 'katkout' },
-            { label: 'chmex', value: 'chmexito' }
-          ]}
-        />
-        <Typography kind='h2'>Hello</Typography>
+            <Overview />
+            <Installation />
+          </div>
+        </div>
       </div>
     </ChmexUIContext.Provider>
   )

@@ -1,0 +1,11 @@
+.nt-navbar {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nt-navbar * {
+  margin: 0px;
+}
