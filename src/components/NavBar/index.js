@@ -13,12 +13,11 @@ const NavBar = ({ leftChild, rightChild, style }) => {
       className={styles['nt-navbar']}
       style={{
         borderBottom: `1px solid ${getBorderColor(colors, dark)}`,
-
         ...style
       }}
     >
-      <div className={styles['nt-left']}>{leftChild}</div>
-      <div className={styles['nt-right']}>{rightChild}</div>
+      <div className={styles.left}>{leftChild}</div>
+      <div className={styles.right}>{rightChild}</div>
     </div>
   )
 }

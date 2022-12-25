@@ -9,3 +9,10 @@
 .nt-navbar * {
   margin: 0px;
 }
+
+.nt-navbar .left,
+.nt-navbar .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

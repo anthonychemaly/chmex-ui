@@ -1,4 +1,5 @@
 import './index.css'
+import 'chmex-ui/dist/index.css'
 
 import React from 'react'
 import ReactDOM from 'react-dom'

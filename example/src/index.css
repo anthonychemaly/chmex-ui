@@ -1,10 +1,27 @@
 body {
   margin: 0;
-  background: black;
+}
+
+.dark .sidebar,
+.dark .documentation-wrapper {
+  background: black !important;
+}
+
+.dark .sidebar {
+  border-right: 1px solid rgba(255, 255, 255, 0.8) !important;
+}
+
+.light .sidebar,
+.light .documentation-wrapper {
+  background: white !important;
+}
+
+.light .sidebar {
+  border-right: 1px solid rgba(196, 196, 196, 0.8) !important;
 }
 
 .documentation-wrapper {
-  height: 100vh;
+  min-height: 100vh;
   width: calc(100vw - 300px);
   box-sizing: border-box;
   position: absolute;
@@ -18,8 +35,8 @@ body {
 .sidebar {
   width: 300px;
   height: 100vh;
-  border-right: 1px solid rgba(255, 255, 255, 0.8);
   position: fixed;
+  z-index: 1;
 }
 
 .page-container {
@@ -27,6 +44,11 @@ body {
   flex-direction: row;
 }
 
-.section{
-  padding-block: 32px;
+.section {
+  padding-bottom: 32px;
+}
+
+.mode-icon {
+  width: 28px;
+  cursor: pointer;
 }
