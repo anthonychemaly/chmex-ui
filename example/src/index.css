@@ -39,6 +39,27 @@ body {
   z-index: 1;
 }
 
+.sidebar .title {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-inline: 32px ;
+}
+
+.sidebar .logo {
+  height: 48px;
+  margin-right: 20px;
+}
+
+.light .sidebar .title {
+  border-bottom: 1px solid rgba(196, 196, 196, 0.8) !important;
+}
+
+.dark .sidebar .title {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8) !important;
+}
+
 .page-container {
   display: flex;
   flex-direction: row;

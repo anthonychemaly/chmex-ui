@@ -4,6 +4,7 @@ import { Typography, ChmexUIContext, NavBar, Code } from 'chmex-ui'
 
 import Sun from './assets/sun.png'
 import Moon from './assets/moon.png'
+import ChmexUILogo from './assets/chmex-ui.svg'
 
 import { getDocumentation } from './network/ApiAxios'
 
@@ -62,7 +63,14 @@ const App = () => {
       }}
     >
       <div className={`page-container ${isDarkMode ? 'dark' : 'light'}`}>
-        <div className='sidebar'></div>
+        <div className='sidebar'>
+          <div className='title'>
+            <img alt='Chmex UI Logo' src={ChmexUILogo} className='logo' />
+            <Typography kind='h4' style={{ marginBottom: 0 }}>
+              Chmex UI
+            </Typography>
+          </div>
+        </div>
         <div className='documentation-wrapper'>
           <NavBar
             style={{ paddingInline: 64 }}
@@ -81,14 +89,6 @@ const App = () => {
             }
           />
           <div className='documentation'>
-            {/* <Typography kind='h1'>
-              Hey! Welcome to Chmex UI Documentation
-            </Typography>
-            <Typography kind='h4'>
-              This is your all-need guide to use Chmex UI in your app.
-            </Typography>
-*/}
-
             {docs?.map((section) => (
               <div id={section.id} className='section'>
                 {section.field.map((blockItem) => createElement(blockItem))}
