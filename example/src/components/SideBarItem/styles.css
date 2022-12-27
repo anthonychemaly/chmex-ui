@@ -1,0 +1,26 @@
+.sidebar-item {
+  padding-left: 24px;
+  cursor: pointer;
+}
+
+.sidebar-item .wrapper {
+  padding-block: 12px;
+  padding-left: 16px;
+  transition: border-bottom 300ms ease-in-out;
+}
+
+.dark .sidebar-item .wrapper {
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.8);
+}
+
+.dark .sidebar-item .wrapper:hover {
+  border-bottom: 4px solid white;
+}
+
+.light .sidebar-item .wrapper {
+  border-bottom: 0.5px solid rgba(196, 196, 196, 0.8);
+}
+
+.light .sidebar-item .wrapper:hover {
+  border-bottom: 4px solid black;
+}

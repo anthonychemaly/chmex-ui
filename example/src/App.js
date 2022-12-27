@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react'
 
-import { Typography, ChmexUIContext, NavBar, Code } from 'chmex-ui'
+import { Typography, ChmexUIContext, NavBar, Code, TextInput } from 'chmex-ui'
 
 import Sun from './assets/sun.png'
 import Moon from './assets/moon.png'
 import ChmexUILogo from './assets/chmex-ui.svg'
 
 import { getDocumentation } from './network/ApiAxios'
+import SideBarItem from './components/SideBarItem'
 
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(true)
@@ -51,6 +52,16 @@ const App = () => {
           />
         )
 
+      case 'textinput':
+        return (
+          <TextInput
+            key={blockItem.id}
+            label={blockItem.item.label}
+            borderVariant={blockItem.item.borderVariant}
+            containerStyle={blockItem.item.style}
+          />
+        )
+
       default:
         break
     }
@@ -69,6 +80,11 @@ const App = () => {
             <Typography kind='h4' style={{ marginBottom: 0 }}>
               Chmex UI
             </Typography>
+          </div>
+          <div className='items'>
+            {docs?.map((section) => (
+              <SideBarItem label={section.title} />
+            ))}
           </div>
         </div>
         <div className='documentation-wrapper'>
@@ -90,7 +106,7 @@ const App = () => {
           />
           <div className='documentation'>
             {docs?.map((section) => (
-              <div id={section.id} className='section'>
+              <div id={section.title} className='section'>
                 {section.field.map((blockItem) => createElement(blockItem))}
               </div>
             ))}
