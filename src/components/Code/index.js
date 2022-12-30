@@ -1,12 +1,12 @@
 import React from 'react'
 import styles from './styles.modules.scss'
 
-const Code = ({ style, children, code }) => {
+const Code = ({ style, children, code, value }) => {
   return (
     <pre className={styles.pre} style={{ ...style }}>
       <button
         onClick={() => {
-          navigator.clipboard.writeText(children || code)
+          navigator.clipboard.writeText(children || value)
         }}
         className={styles.copy}
       >

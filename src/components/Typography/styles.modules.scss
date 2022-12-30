@@ -9,6 +9,11 @@
   font-family: Public Sans;
   font-weight: 600;
   margin-bottom: 32px;
+  white-space: -moz-pre-wrap; /* Firefox */
+  white-space: -pre-wrap; /* ancient Opera */
+  white-space: -o-pre-wrap; /* newer Opera */
+  white-space: pre-wrap; /* Chrome; W3C standard */
+  word-wrap: break-word; /* IE */
 }
 
 .h1 {
@@ -39,4 +44,9 @@
   color: $cx-grey;
   font-family: IBM Plex Sans;
   font-size: 18px;
+  white-space: -moz-pre-wrap; /* Firefox */
+  white-space: -pre-wrap; /* ancient Opera */
+  white-space: -o-pre-wrap; /* newer Opera */
+  white-space: pre-wrap; /* Chrome; W3C standard */
+  word-wrap: break-word; /* IE */
 }

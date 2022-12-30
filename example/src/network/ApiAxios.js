@@ -12,5 +12,8 @@ const instance = axios.create({
 //   return config
 // })
 
+export const getSectionCategory = async () =>
+  await instance.get('sectionCategory?fields=*.*.*')
+
 export const getDocumentation = async () =>
-  await instance.get('section?fields=*.*.*')
+  await instance.get('section?fields=*.*.*.*.*.*')
