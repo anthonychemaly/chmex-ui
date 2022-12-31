@@ -8,7 +8,7 @@
 }
 
 .pre:hover {
-  outline: 3px solid rgb(0, 127, 255) !important;
+  border: 3px solid rgb(0, 127, 255);
 }
 
 .code {
@@ -27,7 +27,6 @@
   right: 12px;
   top: 10px;
   border: 2px solid rgb(0, 127, 255);
-
   padding: 4px 16px;
   color: white;
   border-radius: 8px;
