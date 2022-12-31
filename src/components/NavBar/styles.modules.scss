@@ -4,6 +4,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  z-index: 2;
 }
 
 .nt-navbar * {
@@ -15,4 +16,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.sticky-top {
+  position: sticky;
+  top: 0;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+}
+
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
 }
