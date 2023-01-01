@@ -8,6 +8,7 @@ import TextArea from './components/TextArea'
 import Select from './components/Select'
 import NavBar from './components/NavBar'
 import Code from './components/Code'
+import Table from './components/Table'
 
 import ChmexUIColors from './constants/colors'
 
@@ -21,6 +22,7 @@ export {
   TextInput,
   TextArea,
   Select,
+  Table,
   NavBar,
   Code,
   ChmexUIContext,
