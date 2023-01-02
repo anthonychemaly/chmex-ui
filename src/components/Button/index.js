@@ -11,7 +11,7 @@ import {
 } from '../utils'
 
 const Button = ({
-  kind,
+  kind = 'basic',
   borderVariant,
   text,
   style,
