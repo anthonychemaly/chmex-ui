@@ -2,28 +2,32 @@ table {
   font-family: IBM Plex Sans;
   font-size: 18px;
   width: 100%;
-  border: 1px solid white;
+  border-width: 1px;
+  border-style: solid;
   border-collapse: collapse;
   display: block;
   overflow-x: auto;
 }
 
 td {
-  border: 1px solid white;
+  border-width: 1px;
+  border-style: solid;
+  border-color: inherit;
 }
 
 th {
   font-family: Public Sans;
   font-weight: 600;
-  color: white;
   text-align: left;
   padding: 16px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: inherit;
 }
 
 td {
   font-family: IBM Plex Sans;
   font-size: 18px;
-  color: white;
   padding: 16px;
 }
 
