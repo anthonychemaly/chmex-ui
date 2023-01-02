@@ -4,12 +4,13 @@ table {
   width: 100%;
   border: 1px solid white;
   border-collapse: collapse;
-
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
 td {
   border: 1px solid white;
-  
 }
 
 th {
@@ -25,4 +26,13 @@ td {
   font-size: 18px;
   color: white;
   padding: 16px;
+}
+
+@media (max-width: 576px) {
+  td {
+    padding: 12px;
+  }
+  th {
+    padding: 12px;
+  }
 }
